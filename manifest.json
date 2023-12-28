@@ -1,0 +1,21 @@
+{
+    "background_color": "#000000",
+    "description": "pwa teste app",
+    "dir": "ltr",
+    "display": "fullscreen",
+    "name": "PWATESTE",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "davasz.github",
+    "start_url": "/",
+    "theme_color": "#000000",
+    "categories": [
+      "education",
+      "entertainment"
+    ],
+    "screenshots": [],
+    "icons": [],
+    "shortcuts": [],
+    "id": "PWA_DAVAS",
+    "lang": "pt"
+  }

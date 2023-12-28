@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Bem-Vindo!</title>
+  <script>
+    if(typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('assets/js/pwabuilder-sw.js')
+    }
+  </script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -45,6 +50,7 @@
       background-color: #0056b3;
     }
   </style>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <div class="welcome-container">
