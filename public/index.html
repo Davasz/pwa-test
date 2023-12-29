@@ -59,19 +59,42 @@
         <h1>Bem-vindo à Página Bonita!</h1>
         <p>Esta é uma página simples, mas bonita, para demonstração.</p>
         <p>Se quiser saber mais sobre HTML e CSS, <a href="https://www.w3schools.com/html/">clique aqui</a>.</p>
+        <input type="text" name="id" id="id" placeholder="Digite seu id">
+        <button onclick="confirm()">Confirmar</button>
+        <button onclick="cancel()">Cancelar</button>
     </div>
+
 
     <script src="https://js.pusher.com/beams/1.0/push-notifications-cdn.js"></script>
 
     <script>
         const beamsClient = new PusherPushNotifications.Client({
-          instanceId: 'eeb902ab-af5a-482c-ad98-77adc283449c',
+            instanceId: 'eeb902ab-af5a-482c-ad98-77adc283449c',
         });
-      
+
         beamsClient.start()
-          .then(() => beamsClient.addDeviceInterest('hello'))
-          .then(() => console.log('Successfully registered and subscribed!'))
-          .catch(console.error);
-      </script>
+            .then(() => beamsClient.addDeviceInterest('hello'))
+            .then(() => console.log('Successfully registered and subscribed!'))
+            .catch(console.error);
+
+        const beamsTokenProvider = new PusherPushNotifications.TokenProvider({
+            url: "http://localhost:3000/auth",
+        });
+
+        function confirm() {
+            let id = document.querySelector('input').value
+
+            beamsClient
+            .start()
+            .then(() => beamsClient.setUserId(id, beamsTokenProvider))
+            .catch(console.error);
+        }
+
+        function cancel() {
+            beamsClient.stop().catch(console.error);
+        }
+        
+    </script>
 </body>
+
 </html>
