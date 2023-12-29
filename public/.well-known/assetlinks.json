@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.onrender.pwa_teste.twa",
+        "sha256_cert_fingerprints": ["F5:0F:4E:1C:BA:1E:83:87:5C:49:BD:C0:99:75:0D:DD:8D:80:28:25:1F:7F:2C:4D:97:E2:D7:8D:8B:DB:C1:12"]
+      }
+    }]
