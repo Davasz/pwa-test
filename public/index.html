@@ -46,6 +46,12 @@
             text-decoration: underline;
         }
     </style>
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if (typeof navigator.serviceWorker !== "undefined") {
+            navigator.serviceWorker.register('service-worker.js')
+        }
+    </script>
 </head>
 
 <body>
@@ -57,15 +63,5 @@
 
     <script src="https://js.pusher.com/beams/1.0/push-notifications-cdn.js"></script>
 
-    <script>
-        const beamsClient = new PusherPushNotifications.Client({
-          instanceId: 'eeb902ab-af5a-482c-ad98-77adc283449c',
-        });
-      
-        beamsClient.start()
-          .then(() => beamsClient.addDeviceInterest('hello'))
-          .then(() => console.log('Successfully registered and subscribed!'))
-          .catch(console.error);
-      </script>
 </body>
 </html>

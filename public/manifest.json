@@ -1,0 +1,48 @@
+{
+  "background_color": "#000000",
+  "description": "pwa-teste",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "name": "PWATeste",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "pwa-teste.onrender",
+  "start_url": "/",
+  "theme_color": "#000000",
+  "categories": [
+    "business",
+    "education"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "img/android/android-launchericon-512-512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "img/android/android-launchericon-192-192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/android/android-launchericon-144-144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "img/android/android-launchericon-96-96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "img/android/android-launchericon-72-72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "img/android/android-launchericon-48-48.png",
+      "sizes": "48x48"
+    }
+  ],
+  "shortcuts": [],
+  "id": "pwa",
+  "display_override": [
+    "window-controls-overlay"
+  ]
+}
