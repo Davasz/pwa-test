@@ -35,21 +35,21 @@ app.get("/not/:id", (req, res) => {
     apns: {
       aps: {
         alert: {
-          title: "Hello",
-          body: "Hello, world!",
+          title: "OIIII GORDAO",
+          body: "OIIII GORDAO",
         },
       },
     },
     fcm: {
       notification: {
-        title: "Hello",
-        body: "Hello, world!",
+        title: "OIIII GORDAO",
+        body: "OIIII GORDAO",
       },
     },
     web: {
       notification: {
-        title: "Hello",
-        body: "Hello, world!",
+        title: "OIIII GORDAO",
+        body: "OIIII GORDAO",
       },
     },
   })
